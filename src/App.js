@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
+import Quiz from "./components/Quiz";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <header className="App-header">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/Quiz" element={<Quiz />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </header>

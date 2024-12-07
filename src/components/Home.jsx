@@ -1,11 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
 
 function Home() {
+  const navigate = useNavigate();
+
+  const goToQuiz = () => {
+    navigate('/Quiz');
+  };
+
   return (
     <div className="App-header">
-      <h1>Welcome to My Website</h1>
-      <p>This is a simple React app with routing set up!</p>
+      <nav>
+        <div className="links">
+          <a href="/">Home</a>
+          <button onClick={goToQuiz}>Quiz</button>
+        </div>
+      </nav>
     </div>
   );
 }
