@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ".Quiz.css"
+import "./Quiz.css";
 
 
 const questions = [
@@ -92,22 +92,14 @@ function Quiz() {
             <button
               key={index}
               onClick={() => handleAnswerClick(option)}
-              style={{
-                display: "block",
-                margin: "10px auto",
-                padding: "10px 20px",
-                cursor: "pointer",
-                border: "1px solid #555",
-                borderRadius: "5px",
-                backgroundColor: "#f0f0f0",
-              }}
+              className="answerButton"
             >
               {option}
             </button>
           ))}
         </div>
       ) : (
-        <div>
+        <div className="div">
           <h1>🎉 Quiz Completed! 🎉</h1>
           <p>
             Your Score: {score} / {questions.length}
@@ -118,6 +110,7 @@ function Quiz() {
               setCurrentQuestion(0);
               setShowResult(false);
             }}
+            className="restartButton"
           >
             Restart Quiz
           </button>

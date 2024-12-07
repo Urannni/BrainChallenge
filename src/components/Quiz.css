@@ -1,0 +1,37 @@
+.div {
+  background: #002ca7;
+  width: 100%;
+  height: fixed;
+  font-size: 30px;
+  color: #E0F7FA;
+}
+.answerButton {
+  display: flex;
+  cursor: pointer;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #E0F7FA;
+  color: #002ca7;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.restartButton {
+  background-color: #004da0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.restartButton:hover {
+  background-color: #0056b3;
+}
