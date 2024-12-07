@@ -1,15 +1,21 @@
-import React from 'react';
-import Navbar from './components/navbar';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <main>
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple React app with a navbar.</p>
-      </main>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </header>
+      </div>
+    </Router>
   );
 }
 
