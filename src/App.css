@@ -1,9 +1,9 @@
 .App {
-  display: flex; 
+  display: flex; /*To centerize everything*/
   justify-content: center; 
   align-items: center; 
-  height: 100vh; 
   text-align: center;
+  height: 100vh; /*Reach the whole viewport*/
 }
 
 .App-header {
@@ -12,7 +12,7 @@
   align-items: center; 
   justify-content: center; 
   background: #427cff;
-  width: 100%;
+  width: 100%; /*Reach the whole viewport*/
   min-height: 100%;
 }
 
@@ -24,10 +24,10 @@
 
 @keyframes Brainlogo {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg);/*Starting position */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg);/* Rotate until the starting position is reached again*/
   }
 }
 
@@ -45,7 +45,7 @@
 
 .main {
   background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(73, 0, 0));
-  width: 100vw;
+  width: 100vw; /*Reaching the whole viewport horizontally and vertically*/
   height: 100vh;
   display: flex;
   flex-direction: column;

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Quiz.css";
 
+// Array of quiz questions, options, and correct answers
 const questions = [
   {
-    question: 
-    "What comes next in the sequence? 2, 4, 8, 16, 32, ___",
+    question: "What comes next in the sequence? 2, 4, 8, 16, 32, ___",
     options: ["48", "50", "60", "64"],
     answer: "64",
   },
@@ -69,74 +69,90 @@ const questions = [
   {
     question:
       "A farmer is trying to cross a river with a fox, a chicken, and a bag of grain. He has a small boat that can only carry him and one other item at a time. If left alone, the fox will eat the chicken, and the chicken will eat the grain. How can the farmer get all three items across the river safely?",
-    options: ["Take the fox first, then the chicken, and then the grain.",
-       " Take the chicken first, return with the fox, then take the grain.",
-        "Take the chicken first, return alone, take the grain across, return with the chicken, then take the fox, and finally return to get the chicken.", 
-        " It is impossible to get all items across safely."],
+    options: [
+      "Take the fox first, then the chicken, and then the grain.",
+      "Take the chicken first, return with the fox, then take the grain.",
+      "Take the chicken first, return alone, take the grain across, return with the chicken, then take the fox, and finally return to get the chicken.",
+      "It is impossible to get all items across safely.",
+    ],
     answer: "Take the chicken first, return alone, take the grain across, return with the chicken, then take the fox, and finally return to get the chicken.",
   },
 ];
 
 function Quiz() {
+  // State to keep track of the current question 
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  
+  // State to keep track of the user's score
   const [score, setScore] = useState(0);
+
+  // State to toggle between showing quiz and result by using boolean
   const [showResult, setShowResult] = useState(false);
 
+  // Function to handle when an answer is clicked
   const handleAnswerClick = (selectedAnswer) => {
-    const correctAnswer = questions[currentQuestion].answer;
+    const correctAnswer = questions[currentQuestion].answer; // Get the correct answer for the current question
 
+    // If the selected answer is correct, increase the score by 1
     if (selectedAnswer === correctAnswer) {
       setScore(score + 1);
     }
 
+    // Move to the next question, or show the result if all questions are answered
     if (currentQuestion + 1 < questions.length) {
       setCurrentQuestion(currentQuestion + 1);
-    } 
-    else {
-      setShowResult(true);
+    } else {
+      setShowResult(true); // All questions answered, show result
     }
   };
 
   return (
-    <div>
-      {!showResult ? (
-        <div>
-          <h1>Logic Quiz</h1>
-          <h3>
-            Question {currentQuestion + 1} of {questions.length}
-          </h3>
-          <p style={{ fontSize: "18px", margin: "20px 0" }}>
-            {questions[currentQuestion].question}
-          </p>
-          {questions[currentQuestion].options.map((option, index) => (
+    <>
+      <div>
+        {/* If the quiz is not completed, show the questions */}
+        {!showResult ? (
+          <div>
+            <h1>Logic Quiz</h1>
+            <h3>
+              Question {currentQuestion + 1} of {questions.length}
+            </h3>
+            <p style={{ fontSize: "18px", margin: "20px 0" }}>
+              {questions[currentQuestion].question}
+            </p>
+
+            {/* Display the options as buttons */}
+            {questions[currentQuestion].options.map((option, index) => (
+              <button
+                key={index}
+                onClick={() => handleAnswerClick(option)} // Call handleAnswerClick with the selected answer
+                className="answerButton"
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+        ) : (
+          // If the quiz is completed, show the result and score
+          <div className="div">
+            <h1>🎉 Quiz Completed! 🎉</h1>
+            <p>
+              Your Score: {score} / {questions.length}
+            </p>
+            {/* Restart the quiz by resetting the state */}
             <button
-              key={index}
-              onClick={() => handleAnswerClick(option)}
-              className="answerButton"
+              onClick={() => {
+                setScore(0); 
+                setCurrentQuestion(0);
+                setShowResult(false); 
+              }}
+              className="restartButton"
             >
-              {option}
+              Restart Quiz
             </button>
-          ))}
-        </div>
-      ) : (
-        <div className="div">
-          <h1>🎉 Quiz Completed! 🎉</h1>
-          <p>
-            Your Score: {score} / {questions.length}
-          </p>
-          <button
-            onClick={() => {
-              setScore(0);
-              setCurrentQuestion(0);
-              setShowResult(false);
-            }}
-            className="restartButton"
-          >
-            Restart Quiz
-          </button>
-        </div>
-      )}
-    </div>
+          </div>
+        )}
+      </div>
+    </>
   );
 }
 
