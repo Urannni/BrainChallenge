@@ -77,7 +77,7 @@
 
 /* Spin Animation */
 .spin {
-  animation: Brainlogo 10s infinite linear;
+  animation: Brainlogo 6s infinite linear;
 }
 
 @keyframes Brainlogo {

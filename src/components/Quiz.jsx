@@ -33,10 +33,10 @@ const questions = [
     question:
       "Two fathers and two sons go fishing. They catch 3 fish, and each person gets one fish. How is this possible?",
     options: [
-      "They are 3 people (grandfather, father, and son)",
       "There are two families",
       "They are related twins",
       "They are 4 people fishing",
+      "They are 3 people (grandfather, father, and son)",
     ],
     answer: "They are 3 people (grandfather, father, and son)",
   },
@@ -44,9 +44,9 @@ const questions = [
     question:
       "There are three boxes. One contains apples, one contains oranges, and one contains both. Each is labeled incorrectly. How can you label them correctly by picking only one fruit from one box?",
     options: [
-      "Pick from the box labeled 'both'",
       "Pick from the box labeled 'apples'",
       "Pick from the box labeled 'oranges'",
+      "Pick from the box labeled 'both'",
       "Ask the storekeeper",
     ],
     answer: "Pick from the box labeled 'both'",
@@ -54,7 +54,11 @@ const questions = [
   {
     question:
       "I have keys but no locks. I have space but no room. You can enter, but you can't go outside. What am I?",
-    options: ["A keyboard", "A house", "A door", "An airplane"],
+    options: [
+      "A house", 
+      "A door", 
+      "A keyboard", 
+      "An airplane"],
     answer: "A keyboard",
   },
   {
