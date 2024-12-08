@@ -1,9 +1,9 @@
 .div {
-  background: #427cff; /* Combination with cyan and white */
+  background: #427cff;
   width: 100%;
   height: fixed;
   font-size: 30px;
-  color: #E0F7FA;
+  color: #e0f7fa;
 }
 .answerButton {
   display: flex;
@@ -11,14 +11,19 @@
   margin: 10px auto;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: #002ca7;
-  color: #E0F7FA;
+  background-color: #06b3ff;
+  color: #e0f7fa;
   font-weight: 700;
   font-size: 20px;
+  transition: 0.6s;
 }
 
+.answerButton:hover {
+  background-color: #2f67e7;
+  transition: 0.6s;
+}
 .restartButton {
-  background-color: #002ca7;
+  background-color: #06b3ff;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -34,6 +39,6 @@
 }
 
 .restartButton:hover {
-  background-color: #0056b3;
+  background-color: #2f67e7;
   transition: 0.3s;
 }

@@ -22,7 +22,7 @@
 /* Navbar Styling */
 .navbar {
   width: 100%;
-  background-color: #0056b3;
+  background-color: #2f67e7;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -34,23 +34,48 @@
 }
 
 /* Logo styling */
-.navbar-logo {
-  flex: 1;
+.navbar-logo-img {
+  list-style-type: none;
+  height: 8vmin;
+  margin-right: 1600px;
+}
+
+/* Navbar links */
+.navbar-links {
+  list-style-type: none;
+  padding: 0;
   display: flex;
   align-items: center;
 }
 
-.navbar-logo {
-  height: 5vmin;
-  display: inline-block;
-}
-
-.logo-img {
-  height: 40vmin;
+.navbar-link {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
-  transition: transform 1s ease-in-out;
+  text-decoration: none;
 }
 
+.nav-link {
+  margin-left: 15px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar-link:hover {
+  color: #da22ff;
+  transition: 0.3s;
+}
+
+/* Spin Animation */
 .spin {
   animation: Brainlogo 10s infinite linear;
 }
@@ -64,30 +89,18 @@
   }
 }
 
-/* Navbar links */
-.navbar-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* Content Styling */
+.content {
+  margin-top: 100px;
+}
+
+.logo-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
-.navbar-links li {
-  margin: 0 15px;
-}
-
-/* Quiz button */
-.navbar-link {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
+.center-logo {
+  height: 40vmin;
   cursor: pointer;
-  text-decoration: none;
-}
-
-.navbar-link:hover {
-  color: #ff5722;
+  transition: transform 1s ease-in-out;
 }
