@@ -1,21 +1,30 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 import "../App.css";
+import logo from "../assets/brainlogo.png"; 
 
 function Home() {
-  const navigate = useNavigate();
-
-  const goToQuiz = () => {
-    navigate("/Quiz");
-  };
-
   return (
     <div className="App-header">
-      <nav>
-        <div className="links">
-          <button onClick={goToQuiz}>Quiz</button>
+      {/* Navbar with logo */}
+      <nav className="navbar">
+        <Link to="/" className="navbar-logo-link">
+          <img src={logo} alt="Brain Logo" className="navbar-logo spin" />
+        </Link>
+        <div className="start-quiz">
+          <Link to="/Quiz" className="navbar-link">
+            Quiz
+          </Link>
         </div>
       </nav>
+
+      <div className="content">
+        <div className="logo-container">
+          <Link to="/" className="logo-img">
+            <img src={logo} alt="Brain Logo" className="center-logo spin" />
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

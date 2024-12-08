@@ -10,7 +10,6 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <img src="/brainlogo.png" className="App-logo" alt="logo" />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Quiz" element={<Quiz />} />
