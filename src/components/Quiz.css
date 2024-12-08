@@ -1,5 +1,5 @@
 .div {
-  background: #002ca7;
+  background: #427cff;
   width: 100%;
   height: fixed;
   font-size: 30px;
@@ -11,14 +11,14 @@
   margin: 10px auto;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: #E0F7FA;
-  color: #002ca7;
+  background-color: #002ca7;
+  color: #E0F7FA;
   font-weight: 700;
   font-size: 20px;
 }
 
 .restartButton {
-  background-color: #004da0;
+  background-color: #002ca7;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -30,8 +30,10 @@
   cursor: pointer;
   font-weight: 700;
   font-size: 20px;
+  transition: 0.3s;
 }
 
 .restartButton:hover {
   background-color: #0056b3;
+  transition: 0.3s;
 }
