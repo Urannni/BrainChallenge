@@ -91,7 +91,8 @@ function Quiz() {
 
     if (currentQuestion + 1 < questions.length) {
       setCurrentQuestion(currentQuestion + 1);
-    } else {
+    } 
+    else {
       setShowResult(true);
     }
   };
