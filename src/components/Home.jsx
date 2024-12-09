@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 import logo from "../assets/brainlogo.png";
+import ChooseDifficulty from "./ChooseDifficulty";
 
 function Home() {
   return (
@@ -19,7 +20,7 @@ function Home() {
             </Link>
           </li>
           <li>
-            <Link className="nav-link navbar-link" to="/Memory cards">MemoryCards</Link>
+            <Link className="nav-link navbar-link" to={<ChooseDifficulty/>}>MemoryCards</Link>
           </li>
           <li>
             <Link className="nav-link navbar-link">Sigma</Link>

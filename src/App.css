@@ -23,7 +23,7 @@
   width: 100%;
   background-color: #92b2ff;
   /* background-color: #2f67e7; */
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +36,7 @@
 .navbar-logo-img {
   list-style-type: none;
   height: 8vmin;
-  margin-right: 1600px;
+  margin-right: 1500px;
 }
 
 .navbar-links {
@@ -69,12 +69,12 @@
 }
 
 .navbar-link:hover {
-  color: #da22ff;
+  color: #2d53fc;
   transition: 0.3s;
 }
 
 .spin {
-  animation: Brainlogo 6s infinite linear;
+  animation: Brainlogo 5s infinite linear;
 }
 
 @keyframes Brainlogo {

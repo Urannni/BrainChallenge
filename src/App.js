@@ -4,7 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import Quiz from "./components/Quiz";
-import MemoryCards from "./components/MemoryCards";
+import ChooseDifficulty from "./components/ChooseDifficulty";
+import MemoryCardsEasy from "./components/MemoryCardsEasy";
+import MemoryCardsMedium from "./components/MemoryCardsMedium";
+import MemoryCardsHard from "./components/MemoryCardsHard"
 
 function App() {
   return (
@@ -14,7 +17,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Quiz" element={<Quiz />} />
-            <Route path="/Memory cards" element={<MemoryCards />} />
+            <Route path="/Memory cards" element={<ChooseDifficulty />} />
+            <Route path="/MemoryCardsEasy" element={<MemoryCardsEasy/>} />
+            <Route path="/MemoryCardsMedium" element={<MemoryCardsMedium/>} />
+            <Route path="/MemoryCardsHard" element={<MemoryCardsHard/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </header>
