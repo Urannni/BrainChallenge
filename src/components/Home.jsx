@@ -20,7 +20,7 @@ function Home() {
             </Link>
           </li>
           <li>
-            <Link className="nav-link navbar-link" to={<ChooseDifficulty/>}>MemoryCards</Link>
+            <Link className="nav-link navbar-link" to="/ChooseDifficulty">MemoryCards</Link>
           </li>
           <li>
             <Link className="nav-link navbar-link">Sigma</Link>
@@ -34,8 +34,16 @@ function Home() {
       </nav>
 
       <div className="content">
-        <div className="logo-container">
+        {/* <div className="logo-container">
             <img src={logo} alt="Brain Logo" className="center-logo spin" />    
+        </div> */}
+        <div className="herosection">
+        <h2>Challenge your mind and have fun with our collection of 
+          brain games and quizzes designed to keep your thinking sharp
+          and your curiosity satisfied! We believe that learning and 
+          entertainment go hand in hand, which is why we offer a wide 
+          range of activities for everyone, from puzzle enthusiasts to trivia love</h2> 
+
         </div>
       </div>
     </div>

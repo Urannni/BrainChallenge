@@ -73,7 +73,7 @@
   transition: 0.3s;
 }
 
-.spin {
+/* .spin {
   animation: Brainlogo 5s infinite linear;
 }
 
@@ -84,7 +84,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .content {
   margin-top: 100px;

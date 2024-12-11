@@ -17,7 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Quiz" element={<Quiz />} />
-            <Route path="/Memory cards" element={<ChooseDifficulty />} />
+            <Route path="/ChooseDifficulty" element={<ChooseDifficulty />} />
             <Route path="/MemoryCardsEasy" element={<MemoryCardsEasy/>} />
             <Route path="/MemoryCardsMedium" element={<MemoryCardsMedium/>} />
             <Route path="/MemoryCardsHard" element={<MemoryCardsHard/>} />
