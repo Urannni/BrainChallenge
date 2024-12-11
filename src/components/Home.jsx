@@ -19,7 +19,7 @@ function Home() {
             </Link>
           </li>
           <li>
-            <Link className="nav-link navbar-link" to="/ChooseDifficulty">MemoryCards</Link>
+            <Link className="nav-link navbar-link" to="/MemoryCards">Memory Cards</Link>
           </li>
           <li>
             <Link className="nav-link navbar-link">Sigma</Link>
@@ -33,9 +33,6 @@ function Home() {
       </nav>
 
       <div className="content">
-        {/* <div className="logo-container">
-            <img src={logo} alt="Brain Logo" className="center-logo spin" />    
-        </div> */}
         <div className="herosection">
         <h2>Challenge your mind and have fun with our collection of 
           brain games and quizzes designed to keep your thinking sharp
