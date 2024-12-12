@@ -54,11 +54,7 @@ const questions = [
   {
     question:
       "I have keys but no locks. I have space but no room. You can enter, but you can't go outside. What am I?",
-    options: [
-      "A house", 
-      "A door", 
-      "A keyboard", 
-      "An airplane"],
+    options: ["A house", "A door", "A keyboard", "An airplane"],
     answer: "A keyboard",
   },
   {
@@ -82,14 +78,15 @@ const questions = [
       "Take the chicken first, return alone, take the grain across, return with the chicken, then take the fox, and finally return to get the chicken.",
       "It is impossible to get all items across safely.",
     ],
-    answer: "Take the chicken first, return alone, take the grain across, return with the chicken, then take the fox, and finally return to get the chicken.",
+    answer:
+      "Take the chicken first, return alone, take the grain across, return with the chicken, then take the fox, and finally return to get the chicken.",
   },
 ];
 
 function Quiz() {
-  // State to keep track of the current question 
+  // State to keep track of the current question
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  
+
   // State to keep track of the user's score
   const [score, setScore] = useState(0);
 
@@ -120,36 +117,29 @@ function Quiz() {
         {!showResult ? (
           <div>
             <nav className="navbar">
-        <ul className="navbar-links">
-          <li className="navbar-logo">
-            <Link to="/" className="navbar-logo-link">
-              <img
-                src={logo}
-                alt="Brain Logo"
-                className="navbar-logo-img spin"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link className="nav-link navbar-link">RPS</Link>
-          </li>
-          <li>
-            <Link className="nav-link navbar-link">Sigma</Link>
-          </li>
-          <li className="nav-link">
-              <Link to="/Quiz" className="navbar-link">
-                Quiz
-              </Link>
-          </li>
-        </ul>
-      </nav>
+              <ul className="navbar-links">
+                <li className="navbar-logo">
+                  <Link to="/" className="navbar-logo-link">
+                    <img
+                      src={logo}
+                      alt="Brain Logo"
+                      className="navbar-logo-img"
+                    />
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className="nav-link navbar-link">
+                    Hand Game
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/MemoryCards" className="nav-link navbar-link">
+                    Memory
+                  </Link>
+                </li>
+              </ul>
+            </nav>
 
-         <div className="content">
-        <div className="logo-container">
-            <img src={logo} alt="Brain Logo" className="center-logo spin" />    
-        </div>
-      </div>
-    
             <h1>Logic Quiz</h1>
             <h3>
               Question {currentQuestion + 1} of {questions.length}
@@ -179,9 +169,9 @@ function Quiz() {
             {/* Restart the quiz by resetting the state */}
             <button
               onClick={() => {
-                setScore(0); 
+                setScore(0);
                 setCurrentQuestion(0);
-                setShowResult(false); 
+                setShowResult(false);
               }}
               className="restartButton"
             >

@@ -1,12 +1,3 @@
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  background-color: #f4f4f4;
-}
-
 .App-header {
   display: flex;
   flex-direction: column;
@@ -17,34 +8,38 @@
   min-height: 100%;
   color: white;
 }
-
 /* Navbar */
 .navbar {
   width: 100%;
   background-color: #6392ff;
-  padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  /* This makes space between logo and links */
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2000;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
+/* Logo styling */
 .navbar-logo-img {
-  list-style-type: none;
-  height: 8vmin;
-  margin-right: 1500px;
+  height: 40px;
+  width: auto;
+  margin-left: 20px;  /* Adding space to the left */
 }
 
+/* Links container */
 .navbar-links {
   list-style-type: none;
   padding: 0;
   display: flex;
   align-items: center;
+  gap: 20px;  /* Space between the navbar links */
 }
 
+/* Individual navbar link */
 .navbar-link {
   background: none;
   border: none;
@@ -53,64 +48,42 @@
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.nav-link {
-  margin-left: 15px;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
+/* Hover effect on links */
 .navbar-link:hover {
   color: #2d53fc;
-  transition: 0.3s;
 }
 
-/* Content */
-.content {
-  margin-top: 100px;
+.navbar-links li {
+  display: inline-block;
 }
 
-.logo-container {
-  display: flex;
-  justify-content: center;
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;  /* Stack navbar items */
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar-logo-img {
+    height: 35px;  /* Adjust logo size for mobile */
+    margin: 10px 0;  /* Space above and below the logo */
+  }
+
+  .navbar-links {
+    flex-direction: column;  /* Stack the links vertically */
+    align-items: center;
+    gap: 15px;  /* Space between links */
+  }
+
+  .navbar-link {
+    font-size: 16px;  /* Adjust link font size for mobile */
+  }
 }
 
-.center-logo {
-  height: 40vmin;
-  cursor: pointer;
-  transition: transform 1s ease-in-out;
-}
-
-.main {
-  background: linear-gradient(to bottom, rgb(128, 0, 0), rgb(0, 0, 0));
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.t404 {
-  font-size: 8rem;
-  font-weight: bold;
-  color: rgb(176, 0, 0);
-  margin-bottom: 20px;
-}
-
-.title {
-  font-size: 2rem;
-  color: rgb(176, 0, 0);
-  margin: 10px 0;
-}
 
 /* Hero section */
 .herosection {
@@ -118,32 +91,39 @@
   display: flex;
   padding: 20px;
   align-items: center;
-  background: #9ab8ff;
   height: 700px;
   margin-bottom: 200px;
   padding-top: 150px;
   width: 100%;
 }
+
 .heroh2 {
   color: #fff;
   margin: 100px;
 }
+
 .brainbulb {
   height: 500px;
   width: 700px;
-  border-radius: 20%;
+  border-radius: 10px;
   margin-right: 100px;
 }
+
 @media (max-width: 800px) {
   .herosection {
     flex-direction: column;
+    height: auto;
+    padding-top: 50px; 
   }
+
   .brainbulb {
     height: 300px;
     width: 400px;
     margin: 25px;
   }
+
   .heroh2 {
     margin: auto;
+    font-size: 18px;
   }
 }

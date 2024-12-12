@@ -131,7 +131,7 @@ function MemoryCards() {
             </Link>
           </li>
           <li>
-            <Link className="nav-link navbar-link"></Link>
+            <Link className="nav-link navbar-link">Hand Game</Link>
           </li>
           <li className="nav-link">
             <Link to="/Quiz" className="navbar-link">

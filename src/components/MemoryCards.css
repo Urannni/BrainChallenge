@@ -10,7 +10,7 @@ body {
   padding: 20px;
 }
 
-/* Navabar */
+/* Navbar */
 .navbar {
   width: 100%;
   background-color: #6392ff;
@@ -149,7 +149,7 @@ h2 {
   margin-top: 20px;
 }
 
-/* For large screens: 6 cards horizontally and 3 vertically */
+/* For large screens: 3 cards horizontally and 6 vertically */
 @media (max-width: 600px) {
   .card {
     width: 100px; /* Larger card width */
