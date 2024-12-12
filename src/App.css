@@ -13,7 +13,6 @@
   align-items: center;
   justify-content: center;
   background: #afc7ff;
-  /* background: #427cff; */
   width: 100%;
   min-height: 100%;
   color: white;
@@ -21,13 +20,12 @@
 
 .navbar {
   width: 100%;
-  background-color: #92b2ff;
-  /* background-color: #2f67e7; */
+  background-color: #6392ff;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 2000;
@@ -215,4 +213,38 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+}
+
+.herosection{
+  color: #fff;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  background:#9ab8ff;
+  height: 700px;
+  margin-bottom: 200px;
+  padding-top: 150px;
+}
+.heroh2{
+  color: #fff;
+  margin: 100px;
+}
+.brainbulb{
+  height: 500px;
+  width: 700px;
+  border-radius: 20%;
+  margin-right: 100px;
+}
+@media(max-width:800px){
+  .herosection{
+    flex-direction: column;
+  }
+  .brainbulb{
+    height: 300px;
+    width: 400px;
+    margin: 25px;
+  }
+  .heroh2{
+    margin: auto;
+  }
 }

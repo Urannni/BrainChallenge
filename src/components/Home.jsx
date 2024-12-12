@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 import logo from "../assets/brainlogo.png";
+import brainlightbulb from "../assets/brain-light-bulb.jpg";
 
 function Home() {
   return (
@@ -34,12 +35,12 @@ function Home() {
 
       <div className="content">
         <div className="herosection">
-        <h2>Challenge your mind and have fun with our collection of 
+        <h2 className="heroh2">Challenge your mind and have fun with our collection of 
           brain games and quizzes designed to keep your thinking sharp
           and your curiosity satisfied! We believe that learning and 
           entertainment go hand in hand, which is why we offer a wide 
-          range of activities for everyone, from puzzle enthusiasts to trivia love</h2> 
-
+          range of activities for everyone, from puzzle enthusiasts to trivia love.</h2> 
+          <img src={brainlightbulb} alt="Brain light bulb" className="brainbulb"/>
         </div>
       </div>
     </div>
