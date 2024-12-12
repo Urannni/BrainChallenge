@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import image1 from '../assets/image-1.png';
-import image2 from '../assets/image-2.png';
-import image3 from '../assets/image-3.png';
-import image4 from '../assets/image-4.png';
-import image5 from '../assets/image-5.png';
-import image6 from '../assets/image-6.png';
-import image7 from '../assets/image-7.png';
-import image8 from '../assets/image-8.png';
-import image9 from '../assets/image-9.png';
-import cover from '../assets/cover.png';
+import React, { useState, useEffect } from "react";
+import "./MemoryCards.css";
+import image1 from "../assets/image-1.png";
+import image2 from "../assets/image-2.png";
+import image3 from "../assets/image-3.png";
+import image4 from "../assets/image-4.png";
+import image5 from "../assets/image-5.png";
+import image6 from "../assets/image-6.png";
+import image7 from "../assets/image-7.png";
+import image8 from "../assets/image-8.png";
+import image9 from "../assets/image-9.png";
+import cover from "../assets/cover.png";
+import { Link } from "react-router-dom";
+import logo from "../assets/brainlogo.png";
 
 const cardImages = [
   { src: image1 },
@@ -22,7 +25,7 @@ const cardImages = [
   { src: image9 },
 ];
 
-function MemoryCardEasy() {
+function MemoryCards() {
   const [cards, setCards] = useState([]);
   const [turns, setTurns] = useState(0);
   const [choiceOne, setChoiceOne] = useState(null);
@@ -34,7 +37,12 @@ function MemoryCardEasy() {
   const shuffleCards = () => {
     const shuffledCards = [...cardImages, ...cardImages]
       .sort(() => Math.random() - 0.5)
-      .map((card) => ({ ...card, id: Math.random(), flipped: false, matched: false }));
+      .map((card) => ({
+        ...card,
+        id: Math.random(),
+        flipped: false,
+        matched: false,
+      }));
 
     setCards(shuffledCards);
     setTurns(0);
@@ -105,11 +113,34 @@ function MemoryCardEasy() {
   }, []);
 
   // Win message
-  const winMessage = pairsFound === cards.length / 2 && <h2>You won in {turns} turns!</h2>;
+  const winMessage = pairsFound === cards.length / 2 && (
+    <h2>You won in {turns} turns!</h2>
+  );
 
   return (
     <div className="Appads">
-      <h1>Magic Match</h1>
+      <nav className="navbar">
+        <ul className="navbar-links">
+          <li className="navbar-logo">
+            <Link to="/" className="navbar-logo-link">
+              <img
+                src={logo}
+                alt="Brain Logo"
+                className="navbar-logo-img spin"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link navbar-link"></Link>
+          </li>
+          <li className="nav-link">
+            <Link to="/Quiz" className="navbar-link">
+              Quiz
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <h1>Memory Cards</h1>
       <button onClick={shuffleCards}>New Game</button>
       <p>Turns: {turns}</p>
       {winMessage}
@@ -121,7 +152,7 @@ function MemoryCardEasy() {
             key={card.id}
             onClick={() => handleCardClick(card.id)}
           >
-            <div className={`card-inner ${card.flipped ? 'flipped' : ''}`}>
+            <div className={`card-inner ${card.flipped ? "flipped" : ""}`}>
               <div className="front">
                 <img src={card.src} alt="card front" />
               </div>
@@ -136,4 +167,4 @@ function MemoryCardEasy() {
   );
 }
 
-export default MemoryCardEasy;
+export default MemoryCards;

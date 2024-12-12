@@ -131,7 +131,7 @@ function Quiz() {
             </Link>
           </li>
           <li>
-            <Link className="nav-link navbar-link">Sigma</Link>
+            <Link className="nav-link navbar-link">RPS</Link>
           </li>
           <li>
             <Link className="nav-link navbar-link">Sigma</Link>

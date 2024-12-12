@@ -23,7 +23,7 @@ function Home() {
             <Link className="nav-link navbar-link" to="/MemoryCards">Memory Cards</Link>
           </li>
           <li>
-            <Link className="nav-link navbar-link">Sigma</Link>
+            <Link className="nav-link navbar-link"></Link>
           </li>
           <li className="nav-link">
               <Link to="/Quiz" className="navbar-link">

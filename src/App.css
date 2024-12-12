@@ -18,6 +18,7 @@
   color: white;
 }
 
+/* Navbar */
 .navbar {
   width: 100%;
   background-color: #6392ff;
@@ -71,6 +72,7 @@
   transition: 0.3s;
 }
 
+/* Content */
 .content {
   margin-top: 100px;
 }
@@ -109,142 +111,39 @@
   color: rgb(176, 0, 0);
   margin: 10px 0;
 }
- 
 
-/* Memory card styling */
-.card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-.card {
-  width: 100px;
-  height: 150px;
-  perspective: 1000px; /* Enable 3D space for flipping */
-  cursor: pointer;
-}
-
-.card-inner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease; /* Smooth flip */
-}
-
-.card-inner.flipped {
-  transform: rotateY(180deg); /* Flip to show front */
-}
-
-.card .front,
-.card .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-}
-
-.card .front img,
-.card .back img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure images fit */
-  border-radius: 10px;
-}
-
-.card .front {
-  transform: rotateY(180deg);
-}
-
-.card .back {
-  transform: rotateY(0deg);
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 10px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-.Appads {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-  margin: 50px auto;
-}
-
-h1 {
-  font-size: 2em;
-  color: #333;
-}
-
-p {
-  font-size: 1.2em;
-  color: #555;
-}
-
-h2 {
-  color: green;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.herosection{
+/* Hero section */
+.herosection {
   color: #fff;
   display: flex;
   padding: 20px;
   align-items: center;
-  background:#9ab8ff;
+  background: #9ab8ff;
   height: 700px;
   margin-bottom: 200px;
   padding-top: 150px;
+  width: 100%;
 }
-.heroh2{
+.heroh2 {
   color: #fff;
   margin: 100px;
 }
-.brainbulb{
+.brainbulb {
   height: 500px;
   width: 700px;
   border-radius: 20%;
   margin-right: 100px;
 }
-@media(max-width:800px){
-  .herosection{
+@media (max-width: 800px) {
+  .herosection {
     flex-direction: column;
   }
-  .brainbulb{
+  .brainbulb {
     height: 300px;
     width: 400px;
     margin: 25px;
   }
-  .heroh2{
+  .heroh2 {
     margin: auto;
   }
 }
