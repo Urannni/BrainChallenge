@@ -34,7 +34,7 @@ function Game() {
       }, 1500);
     }
   }, [aiChoice, humanChoice]);
-
+          
   useEffect(() => {
     if (humanScore === 5 || aiScore === 5) {
       setShowChoices(true);
