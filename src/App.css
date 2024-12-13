@@ -28,6 +28,7 @@
 .navbar-logo-img {
   height: 40px;
   width: auto; 
+  margin-left: -80px;
 }
 
 /* Links container */

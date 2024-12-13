@@ -148,7 +148,9 @@ h2 {
   font-size: 1.8rem;
   margin-top: 20px;
 }
-
+.div{
+  margin-top: -200px;
+}
 /* For large screens: 3 cards horizontally and 6 vertically */
 @media (max-width: 600px) {
   .card {
@@ -175,4 +177,3 @@ h2 {
     font-size: 2.5rem; /* Larger font for large screens */
   }
 }
-

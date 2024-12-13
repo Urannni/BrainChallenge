@@ -140,6 +140,7 @@ function MemoryCards() {
           </li>
         </ul>
       </nav>
+      <div className="div">
       <h1>Memory Cards</h1>
       <button onClick={shuffleCards}>New Game</button>
       <p>Turns: {turns}</p>
@@ -163,6 +164,8 @@ function MemoryCards() {
           </div>
         ))}
       </div>
+      </div>
+
     </div>
   );
 }
