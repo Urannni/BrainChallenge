@@ -9,12 +9,15 @@ body {
 .Appads {
   padding: 20px;
 }
-
+.space{
+  height: 200px;
+  background-color: #fff;
+}
 /* Navbar */
 .navbar {
   width: 100%;
   background-color: #6392ff;
-  padding: 10px 20px;
+  padding: 5px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +30,7 @@ body {
 .navbar-logo-img {
   list-style-type: none;
   height: 8vmin;
-  margin-right: 1500px;
+  margin-right: 1600px;
 }
 
 .navbar-links {
@@ -149,7 +152,7 @@ h2 {
   margin-top: 20px;
 }
 .div{
-  margin-top: -200px;
+  margin-top: -280px;
 }
 /* For large screens: 3 cards horizontally and 6 vertically */
 @media (max-width: 600px) {

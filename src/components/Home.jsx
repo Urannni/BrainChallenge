@@ -3,7 +3,7 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import logo from "../assets/brainlogo.png";
 import brainlightbulb from "../assets/brain-light-bulb.jpg";
-
+import Footer from "./Footer";
 function Home() {
   return (
     <div className="App-header">
@@ -41,6 +41,7 @@ function Home() {
           <img src={brainlightbulb} alt="Brain light bulb" className="brainbulb"/>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
