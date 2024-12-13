@@ -163,8 +163,9 @@ h2 {
     height: 125px; /* Smaller card height */
   }
 
-  h1 {
-    font-size: 1.5rem; /* Smaller font for small screens */
+  .h1 {
+    font-size: 1.5rem; 
+    margin-top: 300px;
   }
   .card-grid{
     grid-template-columns: repeat(3, 1fr);
