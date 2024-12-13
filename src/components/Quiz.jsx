@@ -3,6 +3,7 @@ import "./Quiz.css";
 import "../App.css";
 import { Link } from "react-router-dom";
 import logo from "../assets/brainlogo.png";
+import Footer from "./Footer";
 
 // Array of quiz questions, options, and correct answers
 const questions = [
@@ -129,7 +130,7 @@ function Quiz() {
                 </li>
                 <li>
                   <Link to="/Game" className="nav-link navbar-link">
-                    Rock Paper Scissors Shoot!
+                    Rock Paper Scissors
                   </Link>
                 </li>
                 <li>
@@ -139,30 +140,56 @@ function Quiz() {
                 </li>
               </ul>
             </nav>
+            <div className="div">
+              <h1 className="h1">Logic Quiz</h1>
+              <h3>
+                Question {currentQuestion + 1} of {questions.length}
+              </h3>
+              <p style={{ fontSize: "18px", margin: "20px 0" }}>
+                {questions[currentQuestion].question}
+              </p>
 
-            <h1>Logic Quiz</h1>
-            <h3>
-              Question {currentQuestion + 1} of {questions.length}
-            </h3>
-            <p style={{ fontSize: "18px", margin: "20px 0" }}>
-              {questions[currentQuestion].question}
-            </p>
-
-            {/* Display the options as buttons */}
-            {questions[currentQuestion].options.map((option, index) => (
-              <button
-                key={index}
-                onClick={() => handleAnswerClick(option)} // Call handleAnswerClick with the selected answer
-                className="answerButton"
-              >
-                {option}
-              </button>
-            ))}
+              {/* Display the options as buttons */}
+              {questions[currentQuestion].options.map((option, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleAnswerClick(option)} // Call handleAnswerClick with the selected answer
+                  className="answerButton"
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
           </div>
         ) : (
           // If the quiz is completed, show the result and score
+          <div className="divvv">
+
+          <nav className="navbar">
+          <ul className="navbar-links">
+            <li className="navbar-logo">
+              <Link to="/" className="navbar-logo-link">
+                <img
+                  src={logo}
+                  alt="Brain Logo"
+                  className="navbar-logo-img"
+                />
+              </Link>
+            </li>
+            <li>
+              <Link to="/Game" className="nav-link navbar-link">
+                Rock Paper Scissors Shoot!
+              </Link>
+            </li>
+            <li>
+              <Link to="/MemoryCards" className="nav-link navbar-link">
+                Memory Game
+              </Link>
+            </li>
+          </ul>
+        </nav>
           <div className="div">
-            <h1>🎉 Quiz Completed! 🎉</h1>
+            <h1 className="h11">🎉 Quiz Completed! 🎉</h1>
             <p>
               Your Score: {score} / {questions.length}
             </p>
@@ -178,8 +205,10 @@ function Quiz() {
               Restart Quiz
             </button>
           </div>
+          </div>
         )}
       </div>
+      <Footer />
     </>
   );
 }

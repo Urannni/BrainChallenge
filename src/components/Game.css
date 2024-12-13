@@ -82,7 +82,7 @@
     height: 75vh;
     justify-content: space-evenly; 
     padding: 0 5%; 
-    gap: 60%;
+    gap: 350px;
   }
   
   
@@ -96,6 +96,7 @@
     height: 85vh;
     transform: scaleX(-1);
     rotate: -50deg;
+    margin-right: 130px;
   }
   
   .result {
@@ -104,14 +105,14 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
+    align-items: center !important;
+    justify-content: center !important; 
     color: white;
     font-size: 80px;
     backdrop-filter: blur(3px);
     text-align: center;
-
+    top: 0;
+    left: 0;
   }
   
   .result-buttons button {
@@ -210,6 +211,9 @@
       width: 150px;
       height: 30vh;
     }
+    nav{
+      margin-bottom: 100px;
+    }
   }
   
 /* Navbar */
@@ -241,7 +245,7 @@
   padding: 0;
   display: flex;
   align-items: center;
-  gap: 10px;  /* Space between the navbar links */
+  gap: 10px; 
 }
 
 /* navbar link */

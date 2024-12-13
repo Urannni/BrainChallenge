@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Game.css"
+import "../App.css"
 import Score from "./Score.jsx";
 import Hands from "./Hands.jsx";
 import rockHandButton from "../assets/rock-human--button.png";
@@ -117,7 +118,7 @@ function Game() {
             <Link className="nav-link navbar-link" to="/MemoryCards">Memory Game</Link>
           </li>
           <li className="nav-link">
-              <Link to="/Quiz" className="navbar-link">Logic Quiz</Link>
+              <Link to="/Quiz" className="navbar-link">The Impossible Quiz</Link>
           </li>
         </ul>
       </nav>

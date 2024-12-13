@@ -4,6 +4,7 @@ body {
   background-color: #f0f4f8;
   margin: 0;
   padding: 0;
+  height: auto;
 }
 
 .Appads {
@@ -154,15 +155,16 @@ h2 {
 .div{
   margin-top: -100px;
 }
+
 /* For large screens: 3 cards horizontally and 6 vertically */
 @media (max-width: 600px) {
   .card {
-    width: 100px; /* Larger card width */
-    height: 125px; /* Larger card height */
+    width: 100px; /* Smaller card width */
+    height: 125px; /* Smaller card height */
   }
 
   h1 {
-    font-size: 1.5rem; /* Larger font for large screens */
+    font-size: 1.5rem; /* Smaller font for small screens */
   }
   .card-grid{
     grid-template-columns: repeat(3, 1fr);
@@ -177,6 +179,8 @@ h2 {
   }
 
   h1 {
-    font-size: 2.5rem; /* Larger font for large screens */
+    font-size: 2.5rem; /* Larger font for larger screens */
   }
 }
+
+
