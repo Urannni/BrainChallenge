@@ -8,10 +8,10 @@ body {
 
 .Appads {
   padding: 20px;
+  color: #eee;
 }
-.space{
-  height: 200px;
-  background-color: #fff;
+.h1{
+  color: #eee;
 }
 /* Navbar */
 .navbar {
@@ -152,7 +152,7 @@ h2 {
   margin-top: 20px;
 }
 .div{
-  margin-top: -280px;
+  margin-top: -100px;
 }
 /* For large screens: 3 cards horizontally and 6 vertically */
 @media (max-width: 600px) {

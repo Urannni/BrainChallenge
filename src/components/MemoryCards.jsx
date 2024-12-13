@@ -131,7 +131,7 @@ function MemoryCards() {
             </Link>
           </li>
           <li>
-            <Link className="nav-link navbar-link">Rock Paper Scissors Shoot!</Link>
+            <Link to="/Game" className="nav-link navbar-link">Rock Paper Scissors Shoot!</Link>
           </li>
           <li className="nav-link">
             <Link to="/Quiz" className="navbar-link">
@@ -141,7 +141,7 @@ function MemoryCards() {
         </ul>
       </nav>
       <div className="div">
-      <h1>Memory Cards</h1>
+      <h1 className="h1">Memory Cards</h1>
       <button onClick={shuffleCards}>New Game</button>
       <p>Turns: {turns}</p>
       {winMessage}
@@ -165,7 +165,6 @@ function MemoryCards() {
         ))}
       </div>
       </div>
-<div className="space"></div>
     </div>
   );
 }

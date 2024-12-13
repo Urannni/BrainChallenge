@@ -70,7 +70,7 @@ function Game() {
         setWinText("AI Wins!");
         return "ai";
       }
-    }, 1000)
+    }, 200)
   }
 
   function choice(choice) {
@@ -114,10 +114,10 @@ function Game() {
           <li>
           </li>
           <li>
-            <Link className="nav-link navbar-link" to="/MemoryCards">Memory</Link>
+            <Link className="nav-link navbar-link" to="/MemoryCards">Memory Game</Link>
           </li>
           <li className="nav-link">
-              <Link to="/Quiz" className="navbar-link">Quiz</Link>
+              <Link to="/Quiz" className="navbar-link">Logic Quiz</Link>
           </li>
         </ul>
       </nav>
