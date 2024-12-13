@@ -20,7 +20,7 @@ function Home() {
             </Link>
           </li>
           <li>
-            <Link className="nav-link navbar-link">Hand Game</Link>
+            <Link to="/Game" className="nav-link navbar-link">RockPaperScissors</Link>
           </li>
           <li>
             <Link className="nav-link navbar-link" to="/MemoryCards">Memory</Link>

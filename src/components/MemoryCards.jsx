@@ -131,11 +131,11 @@ function MemoryCards() {
             </Link>
           </li>
           <li>
-            <Link className="nav-link navbar-link">Hand Game</Link>
+            <Link className="nav-link navbar-link">Rock Paper Scissors Shoot!</Link>
           </li>
           <li className="nav-link">
             <Link to="/Quiz" className="navbar-link">
-              Quiz
+              Logic Quiz
             </Link>
           </li>
         </ul>

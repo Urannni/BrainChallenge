@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import Quiz from "./components/Quiz";
 import MemoryCards from "./components/MemoryCards";
+import Game from "./components/Game"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Quiz" element={<Quiz />} />
             <Route path="/MemoryCards" element={<MemoryCards/>} />
+            <Route path="/Game" element={<Game/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </header>

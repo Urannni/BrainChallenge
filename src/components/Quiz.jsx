@@ -128,13 +128,13 @@ function Quiz() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="nav-link navbar-link">
-                    Hand Game
+                  <Link to="/Game" className="nav-link navbar-link">
+                    Rock Paper Scissors Shoot!
                   </Link>
                 </li>
                 <li>
                   <Link to="/MemoryCards" className="nav-link navbar-link">
-                    Memory
+                    Memory Game
                   </Link>
                 </li>
               </ul>
