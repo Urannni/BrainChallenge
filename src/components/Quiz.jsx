@@ -82,7 +82,51 @@ const questions = [
     answer:
       "Take the chicken first, return alone, take the grain across, return with the chicken, then take the fox, and finally return to get the chicken.",
   },
+  {
+    question: "What is the derivative of ln(sqrt(x^2 + 1))?",
+    options: [
+      "x / (x^2 + 1)",
+      "1 / (2 * (x^2 + 1))",
+      "x / sqrt(x^2 + 1)",
+      "1 / sqrt(x^2 + 1)",
+    ],
+    answer: "x / (x^2 + 1)",
+  },
+  {
+    question:
+      "A particle moves in a circular path of radius r with constant speed. What is the direction of the acceleration?",
+    options: [
+      "Tangential to the circle",
+      "Radially inward", 
+      "Radially outward",
+      "Zero",
+    ],
+    answer: "Radially inward",
+  },
+  {
+    question:
+      "Which of the following countries has the most UNESCO World Heritage Sites?",
+    options: ["India", "Italy", "China", "Spain"],
+    answer: "Italy", 
+  },
+  {
+    question:
+      "Who was the first ruler to unite most of India under one empire?",
+    options: [
+      "Chandragupta Maurya",
+      "Ashoka the Great",
+      "Akbar the Great",
+      "Harshavardhana",
+    ],
+    answer: "Chandragupta Maurya",
+  },
+  {
+    question: "What is the approximate surface temperature of the Sun?",
+    options: ["2,000 K", "5,800 K", "10,000 K", "15,000 K"],
+    answer: "5,800 K", 
+  },
 ];
+
 
 function Quiz() {
   // State to keep track of the current question
