@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../components/Footer.css";
 import fbIcon from "../assets/fb.png";
-import twitterIcon from "../assets/twitter.png";
+import twitterIcon from "../assets/x.png";
 import ytIcon from "../assets/yt.png";
 
 function Footer() {
