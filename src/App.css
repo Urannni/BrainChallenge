@@ -27,8 +27,8 @@
 /* Logo styling */
 .navbar-logo-img {
   height: 40px;
-  width: auto; 
-  margin-left: -80px;
+  width: auto;
+  align-items: start;
 }
 
 /* Links container */
@@ -37,7 +37,7 @@
   padding: 0;
   display: flex;
   align-items: center;
-  gap: 10px;  /* Space between the navbar links */
+  gap: 10px; /* Space between the navbar links */
 }
 
 /* navbar link */
@@ -64,27 +64,26 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;  
+    flex-direction: column;
     align-items: center;
     padding: 10px;
   }
 
   .navbar-logo-img {
-    height: 35px; 
-    margin: 10px 0;  
+    height: 35px;
+    margin: 10px 0;
   }
 
   .navbar-links {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    gap: 15px; 
+    gap: 15px;
   }
 
   .navbar-link {
-    font-size: 16px; 
+    font-size: 16px;
   }
 }
-
 
 /* Hero section */
 .herosection {
@@ -96,7 +95,6 @@
   margin-bottom: 200px;
   padding-top: 150px;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .heroh2 {
@@ -104,7 +102,7 @@
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   margin: 40px;
 }
-.heroh1{
+.heroh1 {
   color: #fff;
   text-shadow: 3px 5px rgba(0, 0, 0, 0.5);
   margin: 40px;
@@ -112,8 +110,8 @@
   font-size: 65px;
 }
 .brainbulb {
-  width: 1200px;
-  height: 700px;
+  width: 1000px;
+  height: 550px;
   border-radius: 10px;
   background: url(./assets/brain-light-bulb.jpg);
   background-repeat: no-repeat;
@@ -125,11 +123,12 @@
   text-align: center;
   flex-direction: column;
   margin-top: 100px;
+  transition: 0.5s;
 }
 
 .brainworkout {
-  width: 1200px;
-  height: 700px;
+  width: 1000px;
+  height: 550px;
   border-radius: 10px;
   background: url(./assets/brain-workout.webp);
   background-repeat: no-repeat;
@@ -141,18 +140,29 @@
   text-align: center;
   flex-direction: column;
   margin-top: 100px;
+  transition: 0.5s;
 }
-
-
+.brainbulb:hover,
+.brainworkout:hover {
+  transform:scale(0.93);
+  transition: 0.5s;
+}
 
 @media (max-width: 800px) {
   .herosection {
     flex-direction: column;
     height: auto;
-    padding-top: 50px; 
+    padding-top: 50px;
   }
 
   .brainbulb {
+    height: 300px;
+    width: 400px;
+    margin: 25px;
+    padding: 20px;
+  }
+
+  .brainworkout {
     height: 300px;
     width: 400px;
     margin: 25px;
@@ -163,19 +173,19 @@
     margin: auto;
     font-size: 12px;
   }
-  .heroh1{
+  .heroh1 {
     font-size: 20px;
   }
 }
-.t404{
+.t404 {
   font-size: 150px;
   margin-top: -10px;
 }
-.title{
+.title {
   font-size: 40px;
   margin-top: -5px;
 }
-.main{
+.main {
   background: linear-gradient(to bottom, #3045ff, #4eb4fc);
   width: 100%;
   height: 1000px;
