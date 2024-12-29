@@ -5,7 +5,6 @@ import logo from "../assets/brainlogo.png";
 import Footer from "./Footer";
 import "./Footer.css";
 
-
 function Home() {
   return (
     <div className="App-header">
@@ -22,33 +21,49 @@ function Home() {
             </Link>
           </li>
           <li>
-            <Link to="/Game" className="nav-link navbar-link">RockPaperScissors</Link>
+            <Link to="/Game" className="nav-link navbar-link">
+              RockPaperScissors
+            </Link>
           </li>
           <li>
-            <Link className="nav-link navbar-link" to="/MemoryCards">Memory</Link>
+            <Link className="nav-link navbar-link" to="/MemoryCards">
+              Memory
+            </Link>
           </li>
           <li className="nav-link">
-              <Link to="/Quiz" className="navbar-link">Quiz</Link>
+            <Link to="/Quiz" className="navbar-link">
+              Quiz
+            </Link>
           </li>
         </ul>
       </nav>
 
-      <div className="content">
-        <div className="herosection">
 
+        <div className="herosection">
           <div className="brainbulb">
-            
             <h1 className="heroh1">Brain Challenge</h1>
-        <h2 className="heroh2">Challenge your mind and have fun with our collection of 
-          brain games and quizzes designed to keep your thinking sharp
-          and your curiosity satisfied! We believe that learning and 
-          entertainment go hand in hand, which is why we offer a wide 
-          range of activities for everyone, from puzzle enthusiasts to trivia love.</h2> 
+            <h2 className="heroh2">
+              Challenge your mind and have fun with our collection of brain
+              games and quizzes designed to keep your thinking sharp and your
+              curiosity satisfied! We believe that learning and entertainment go
+              hand in hand, which is why we offer a wide range of activities for
+              everyone, from puzzle enthusiasts to trivia love.
+            </h2>
           </div>
 
+          <div className="brainworkout">
+            <h1 className="heroh1">Brain Workout</h1>
+            <h2 className="heroh2">
+              Give your brain a workout and enjoy our engaging collection of
+              challenging puzzles and quizzes designed to keep your mind active
+              and sharp! We believe in combining fun and mental stimulation,
+              offering a variety of activities for all thinkers, from logic
+              problem solvers to memory game fans.
+            </h2>
+          </div>
         </div>
-      </div>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }
