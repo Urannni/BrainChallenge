@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./MemoryCards.css";
-import Footer from "./Footer"
 import image1 from "../assets/image-1.png";
 import image2 from "../assets/image-2.png";
 import image3 from "../assets/image-3.png";
@@ -11,8 +10,7 @@ import image7 from "../assets/image-7.png";
 import image8 from "../assets/image-8.png";
 import image9 from "../assets/image-9.png";
 import cover from "../assets/cover.png";
-import { Link } from "react-router-dom";
-import logo from "../assets/brainlogo.png";
+import Navbar from "./Navbar";
 
 const cardImages = [
   { src: image1 },
@@ -120,51 +118,33 @@ function MemoryCards() {
 
   return (
     <div className="Appads">
-      <nav className="navbar">
-        <ul className="navbar-links">
-          <li className="navbar-logo">
-            <Link to="/" className="navbar-logo-link">
-              <img
-                src={logo}
-                alt="Brain Logo"
-                className="navbar-logo-img spin"
-              />
-            </Link>
-          </li>
-          <li>
-            <Link to="/Game" className="nav-link navbar-link">Rock Paper Scissors Shoot!</Link>
-          </li>
-          <li className="nav-link">
-            <Link to="/Quiz" className="navbar-link">
-              Logic Quiz
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <div className="div">
-      <h1 className="h1">Memory Cards</h1>
-      <button onClick={shuffleCards}>New Game</button>
-      <p>Turns: {turns}</p>
-      {winMessage}
+      
+      <Navbar />
 
-      <div className="card-grid">
-        {cards.map((card) => (
-          <div
-            className="card"
-            key={card.id}
-            onClick={() => handleCardClick(card.id)}
-          >
-            <div className={`card-inner ${card.flipped ? "flipped" : ""}`}>
-              <div className="front">
-                <img src={card.src} alt="card front" />
-              </div>
-              <div className="back">
-                <img src={cover} alt="card back" />
+      <div className="div">
+        <h1 className="h1">Memory Cards</h1>
+        <button onClick={shuffleCards}>New Game</button>
+        <p>Turns: {turns}</p>
+        {winMessage}
+
+        <div className="card-grid">
+          {cards.map((card) => (
+            <div
+              className="card"
+              key={card.id}
+              onClick={() => handleCardClick(card.id)}
+            >
+              <div className={`card-inner ${card.flipped ? "flipped" : ""}`}>
+                <div className="front">
+                  <img src={card.src} alt="card front" />
+                </div>
+                <div className="back">
+                  <img src={cover} alt="card back" />
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
     </div>
   );

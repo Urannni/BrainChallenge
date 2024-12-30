@@ -8,6 +8,7 @@ import paperHandButton from "../assets/paper-human-button.png";
 import scissorsHandButton from "../assets/scissors-human-button.png";
 import logo from "../assets/brainlogo.png";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar.jsx";
 
 function Game() {
   const [humanChoice, setHumanChoice] = useState(null);
@@ -101,27 +102,9 @@ function Game() {
 
   return (
     <div className="game">
-    <nav className="navbar">
-        <ul className="navbar-links">
-          <li className="navbar-logo">
-            <Link to="/" className="navbar-logo-link">
-              <img
-                src={logo}
-                alt="Brain Logo"
-                className="navbar-logo-img spin"
-              />
-            </Link>
-          </li>
-          <li>
-          </li>
-          <li>
-            <Link className="nav-link navbar-link" to="/MemoryCards">Memory Game</Link>
-          </li>
-          <li className="nav-link">
-              <Link to="/Quiz" className="navbar-link">The Impossible Quiz</Link>
-          </li>
-        </ul>
-      </nav>
+
+      <Navbar/>
+      
       <Score aiScore={aiScore} humanScore={humanScore} />
       <Hands
         aiHand={shakeAnimation ? "rock" : aiChoice}
