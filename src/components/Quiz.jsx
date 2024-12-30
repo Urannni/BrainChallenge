@@ -187,30 +187,6 @@ function Quiz() {
         ) : (
           // If the quiz is completed, show the result and score
           <div className="divvv">
-
-          <nav className="navbar">
-          <ul className="navbar-links">
-            <li className="navbar-logo">
-              <Link to="/" className="navbar-logo-link">
-                <img
-                  src={logo}
-                  alt="Brain Logo"
-                  className="navbar-logo-img"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link to="/Game" className="nav-link navbar-link">
-                Rock Paper Scissors Shoot!
-              </Link>
-            </li>
-            <li>
-              <Link to="/MemoryCards" className="nav-link navbar-link">
-                Memory Game
-              </Link>
-            </li>
-          </ul>
-        </nav>
           <div className="div">
             <h1 className="h11">🎉 Quiz Completed! 🎉</h1>
             <p>

@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Game.css"
-import "../App.css"
 import Score from "./Score.jsx";
 import Hands from "./Hands.jsx";
 import rockHandButton from "../assets/rock-human--button.png";
 import paperHandButton from "../assets/paper-human-button.png";
 import scissorsHandButton from "../assets/scissors-human-button.png";
-import logo from "../assets/brainlogo.png";
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar.jsx";
 
 function Game() {
   const [humanChoice, setHumanChoice] = useState(null);
@@ -38,7 +34,7 @@ function Game() {
       }, 1500);
     }
   }, [aiChoice, humanChoice]);
-          
+
   useEffect(() => {
     if (humanScore === 5 || aiScore === 5) {
       setShowChoices(true);
@@ -72,7 +68,7 @@ function Game() {
         setWinText("AI Wins!");
         return "ai";
       }
-    }, 200)
+    }, 1000)
   }
 
   function choice(choice) {
@@ -102,9 +98,6 @@ function Game() {
 
   return (
     <div className="game">
-
-      <Navbar/>
-      
       <Score aiScore={aiScore} humanScore={humanScore} />
       <Hands
         aiHand={shakeAnimation ? "rock" : aiChoice}

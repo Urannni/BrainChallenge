@@ -14,18 +14,11 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-logo">
           <Link to="/" className="navbar-logo-link">
-            <img
-              src={logo}
-              alt="Brain Logo"
-              className="navbar-logo-img"
-            />
+            <img src={logo} alt="Brain Logo" className="navbar-logo-img" />
           </Link>
         </div>
         <button onClick={toggleMenu} className="menu-toggle-btn">
-          <FontAwesomeIcon 
-            icon={faBars} 
-            className={isOpen ? 'rotate-icon' : ''}
-          />
+          <FontAwesomeIcon icon={faBars} className={isOpen ? 'rotate-icon' : ''} />
         </button>
         <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
           <li>
