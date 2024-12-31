@@ -11,7 +11,7 @@ import image8 from "../assets/image-8.png";
 import image9 from "../assets/image-9.png";
 import cover from "../assets/cover.png";
 import Navbar from "./Navbar";
-import Footer from "./Footer"
+import Footer from "./Footer";
 
 const cardImages = [
   { src: image1 },
@@ -95,7 +95,7 @@ function MemoryCards() {
           );
         }, 1000);
       }
-      setTurns((prevTurns) => prevTurns + 1); // Increase turns after each pair is clicked
+      setTurns((prevTurns) => prevTurns + 1);
       resetTurn();
     }
   }, [choiceOne, choiceTwo]);
@@ -118,36 +118,36 @@ function MemoryCards() {
   );
 
   return (
-    <div className="Appads">
-      
-      <Navbar />
+    <div className="dova">
+      <div className="Appads">
+        <Navbar />
+        <div className="div">
+          <h1 className="h1">Memory Cards</h1>
+          <button onClick={shuffleCards}>New Game</button>
+          <p>Turns: {turns}</p>
+          {winMessage}
 
-      <div className="div">
-        <h1 className="h1">Memory Cards</h1>
-        <button onClick={shuffleCards}>New Game</button>
-        <p>Turns: {turns}</p>
-        {winMessage}
-
-        <div className="card-grid">
-          {cards.map((card) => (
-            <div
-              className="card"
-              key={card.id}
-              onClick={() => handleCardClick(card.id)}
-            >
-              <div className={`card-inner ${card.flipped ? "flipped" : ""}`}>
-                <div className="front">
-                  <img src={card.src} alt="card front" />
-                </div>
-                <div className="back">
-                  <img src={cover} alt="card back" />
+          <div className="card-grid">
+            {cards.map((card) => (
+              <div
+                className="card"
+                key={card.id}
+                onClick={() => handleCardClick(card.id)}
+              >
+                <div className={`card-inner ${card.flipped ? "flipped" : ""}`}>
+                  <div className="front">
+                    <img src={card.src} alt="card front" />
+                  </div>
+                  <div className="back">
+                    <img src={cover} alt="card back" />
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-      <Footer/>
+          <Footer />
     </div>
   );
 }

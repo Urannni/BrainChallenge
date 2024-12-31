@@ -17,7 +17,7 @@ function Footer() {
           </li>
           <li>
             <Link to="/Game" className="footer-link">
-              Rock Paper Scissors
+              Rock Paper Scissors Shoot!
             </Link>
           </li>
           <li>

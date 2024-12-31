@@ -158,8 +158,8 @@ h2 {
 /* For large screens: 3 cards horizontally and 6 vertically */
 @media (max-width: 600px) {
   .card {
-    width: 100px; /* Smaller card width */
-    height: 125px; /* Smaller card height */
+    width: 100px; 
+    height: 125px; 
   }
 
   .h1 {
@@ -174,12 +174,12 @@ h2 {
 /* For large screens: 6 cards horizontally and 3 vertically */
 @media (min-width: 601px) {
   .card {
-    width: 200px; /* Larger card width */
-    height: 250px; /* Larger card height */
+    width: 200px; 
+    height: 250px;
   }
 
   h1 {
-    font-size: 2.5rem; /* Larger font for larger screens */
+    font-size: 2.5rem; 
   }
 }
 
