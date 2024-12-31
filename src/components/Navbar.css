@@ -1,3 +1,4 @@
+/* Navbar Base Styles */
 .navbar {
   width: 100%;
   background: #1f3c7e;
@@ -10,7 +11,6 @@
   z-index: 2000;
   padding: 10px 20px;
   box-sizing: border-box;
-  text-align: center;
   height: 100px;
 }
 
@@ -24,11 +24,24 @@
   width: auto;
 }
 
+.menu-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-bottom: auto;
+  position: relative;
+}
+
 .navbar-links {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: none; 
+  display: none;
   visibility: hidden;
   position: fixed;
   top: 100px;
@@ -55,13 +68,6 @@
   cursor: pointer;
   text-decoration: none;
   transition: color 0.3s ease;
-} 
-
-.menu-toggle-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 30px;
 }
 
 .rotate-icon {
@@ -69,3 +75,73 @@
   transition: transform 0.3s ease;
 }
 
+/* Responsiveness */
+
+/* Phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .menu-toggle-btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
+
+/* Large Laptops and Small Desktops (770px - 1740px) */
+@media (min-width: 769px) and (max-width: 1740px) {
+  .navbar {
+    height: 110px;
+    padding: 15px 30px;
+  }
+
+  .menu-toggle-btn {
+    font-size: 35px;
+    margin-bottom: auto;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+  }
+
+  .navbar-links {
+    font-size: 20px;
+    top: 110px;
+  }
+
+  .navbar-logo-img {
+    height: 80px;
+  }
+}
+
+/* TVs and Large Screens (min-width: 1741px) */
+@media (min-width: 1741px) {
+  .navbar {
+    height: 120px;
+    padding: 20px 40px;
+  }
+
+  .menu-toggle-btn {
+    font-size: 40px;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+  }
+
+  .navbar-links {
+    font-size: 22px;
+    padding: 30px 0;
+  }
+
+  .navbar-logo-img {
+    height: 90px;
+  }
+}
