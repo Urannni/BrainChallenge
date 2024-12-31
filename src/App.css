@@ -34,10 +34,10 @@
   font-size: 65px;
 }
 .brainbulb {
+  background: url(./assets/brain-light-bulb.jpg);
   width: 1000px;
   height: 550px;
   border-radius: 10px;
-  background: url(./assets/brain-light-bulb.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -51,10 +51,10 @@
 }
 
 .brainworkout {
+  background: url(./assets/brain-workout.webp);
   width: 1000px;
   height: 550px;
   border-radius: 10px;
-  background: url(./assets/brain-workout.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -101,7 +101,8 @@
     font-size: 20px;
   }
 }
-/* Not found */
+
+/* Not Found Page */
 .t404 {
   font-size: 150px;
   margin-top: -10px;

@@ -6,55 +6,6 @@ body {
   height: 100%;
 }
 
-/* Navbar */
-.navbar {
-  width: 100%;
-  background-color: #6392ff;
-  position: fixed; /* Sticks the navbar to the top */
-  top: 0;
-  left: 0;
-  z-index: 2000;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  box-sizing: border-box; 
-  margin-bottom: -200px;
-}
-
-.navbar-logo {
-  flex-shrink: 0; /* Prevents the logo from shrinking */
-}
-
-.navbar-logo-img {
-  height: 40px;
-  width: auto;
-}
-
-.navbar-links {
-  list-style-type: none;
-  padding: 0;
-  gap: 50px; 
-  flex-grow: 1;
-  justify-content: flex-end; 
-  overflow: hidden; 
-}
-
-.navbar-link {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.navbar-link:hover {
-  color: #2d53fc;
-}
-
 /* Content */
 .content {
   text-align: center;
@@ -177,13 +128,4 @@ footer {
 
 .footer-email:hover {
   text-decoration: underline;
-}
-@media(max-width:600px){
-  footer{
-      margin-bottom: -550px;
-      margin-top: 100px;
-  }
-  .h1{
-    margin-top: 150px;
-  }
 }

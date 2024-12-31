@@ -159,7 +159,7 @@ function Quiz() {
   return (
     <>
       <div>
-        <Navbar/>
+        <Navbar />
         {/* If the quiz is not completed, show the questions */}
         {!showResult ? (
           <div>
