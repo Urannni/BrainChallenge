@@ -101,16 +101,27 @@
     font-size: 20px;
   }
 }
+/* Not found */
 .t404 {
   font-size: 150px;
   margin-top: -10px;
+  font-weight: bold;
+  color: #ff0000;
 }
 .title {
+  font-size: 70px;
+  margin-top: -5px;
+  font-weight: bolder;
+  color: #ff0000;
+}
+.titlee {
   font-size: 40px;
   margin-top: -5px;
+  font-weight: bold;
+  color: #da1212;
 }
 .main {
-  background: linear-gradient(to bottom, #3045ff, #4eb4fc);
+  background: linear-gradient(to top, #531414, #e60808);
   width: 100%;
   height: 1000px;
   display: flex;

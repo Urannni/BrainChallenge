@@ -11,6 +11,7 @@ import image8 from "../assets/image-8.png";
 import image9 from "../assets/image-9.png";
 import cover from "../assets/cover.png";
 import Navbar from "./Navbar";
+import Footer from "./Footer"
 
 const cardImages = [
   { src: image1 },
@@ -146,6 +147,7 @@ function MemoryCards() {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

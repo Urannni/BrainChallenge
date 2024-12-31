@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "./Game.css"
+import "./Game.css";
 import Score from "./Score.jsx";
 import Hands from "./Hands.jsx";
 import rockHandButton from "../assets/rock-human--button.png";
 import paperHandButton from "../assets/paper-human-button.png";
 import scissorsHandButton from "../assets/scissors-human-button.png";
+
+import Footer from "./Footer.jsx";
 
 function Game() {
   const [humanChoice, setHumanChoice] = useState(null);
@@ -68,7 +70,7 @@ function Game() {
         setWinText("AI Wins!");
         return "ai";
       }
-    }, 1000)
+    }, 1000);
   }
 
   function choice(choice) {
