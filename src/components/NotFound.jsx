@@ -7,7 +7,7 @@ function NotFound() {
       {/* To set the bg color */}
       <h1 className="t404">! 404 !</h1>
       <h1 className="title">Page Not Found</h1>
-      <p className="titlee">Oops! The page you're looking for does not exist.</p>
+      <p className="titlee">Oops! The page you're looking for does not seem to exist.</p>
     </div>
   );
 }
