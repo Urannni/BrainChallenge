@@ -5,7 +5,7 @@ import Hands from "./Hands.jsx";
 import rockHandButton from "../assets/rock-human--button.png";
 import paperHandButton from "../assets/paper-human-button.png";
 import scissorsHandButton from "../assets/scissors-human-button.png";
-
+import Navbar from "../components/Navbar.jsx"
 import Footer from "./Footer.jsx";
 
 function Game() {
@@ -99,6 +99,8 @@ function Game() {
   }
 
   return (
+    <div className="div">
+      <Navbar/>
     <div className="game">
       <Score aiScore={aiScore} humanScore={humanScore} />
       <Hands
@@ -137,6 +139,8 @@ function Game() {
           </div>
         </div>
       )}
+    </div>
+    <Footer/>
     </div>
   );
 }
