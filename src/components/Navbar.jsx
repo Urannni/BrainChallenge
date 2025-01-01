@@ -22,18 +22,18 @@ const Navbar = () => {
         </button>
         <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
           <li>
-            <Link to="/Game" className="nav-link navbar-link">
-              RockPaperScissors
+            <Link to="/Game" className="navbar-link">
+              Rock Paper Scissors
             </Link>
           </li>
           <li>
-            <Link className="nav-link navbar-link" to="/MemoryCards">
-              Memory
+            <Link className="navbar-link" to="/MemoryCards">
+              Memory Cards
             </Link>
           </li>
-          <li className="nav-link">
+          <li>
             <Link to="/Quiz" className="navbar-link">
-              Quiz
+              The Impossible Quiz
             </Link>
           </li>
         </ul>
