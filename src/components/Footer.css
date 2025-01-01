@@ -6,6 +6,7 @@ footer {
     width: 100vw !important;
     bottom: 0 !important;
     font-weight: 600;
+    height: 200px;
   }
   
   .footer-container {
