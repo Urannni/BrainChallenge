@@ -168,7 +168,7 @@ function Quiz() {
               <h3>
                 Question {currentQuestion + 1} of {questions.length}
               </h3>
-              <p style={{ fontSize: "18px", margin: "20px 0" }}>
+              <p style={{ fontSize: "24px", margin: "20px 0", color: "#fff"}}>
                 {questions[currentQuestion].question}
               </p>
 

@@ -74,7 +74,7 @@ function Tictactoe() {
           winningCells={winningCells}
         />
         <div className="status">
-          <p>{gameStatus}</p>
+          <p className="status-text">{gameStatus}</p>
         </div>
         <button className="reset-button" onClick={handleReset}>
           Reset Game
