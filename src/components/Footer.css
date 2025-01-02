@@ -51,7 +51,7 @@ footer {
   
   .footer-text {
     margin: 20px 0 10px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   
   .footer-email {
@@ -63,3 +63,11 @@ footer {
     text-decoration: underline;
   }
 
+  @media (max-width:768px){
+    footer{
+      height: 200px;
+    }
+    .footer-text{
+      font-size: 0.6rem;
+    }
+  }

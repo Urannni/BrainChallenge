@@ -88,8 +88,8 @@
 
 .swiper-pagination-bullet {
   background-color: #ffffff;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   margin: 0 5px;
   border-radius: 50%;
   opacity: 1;
@@ -105,4 +105,15 @@
   color: white;
   background-color: #4caf50;
   border-color: #4caf50;
+}
+
+/* Responsivity */
+@media (max-width:768px) {
+  .quote{
+    font-size: 0.8rem;
+  }
+  .swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+  }
 }

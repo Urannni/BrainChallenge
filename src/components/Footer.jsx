@@ -11,18 +11,18 @@ function Footer() {
       <div className="footer-container">
         <ul className="footer-links">
           <li>
-            <Link to="/MemoryCards" className="footer-link">
-              Memory Game
-            </Link>
-          </li>
-          <li>
             <Link to="/Game" className="footer-link">
               Rock Paper Scissors Shoot!
             </Link>
           </li>
           <li>
+            <Link to="/MemoryCards" className="footer-link">
+              Memory Cards
+            </Link>
+          </li>
+          <li>
             <Link to="/Quiz" className="footer-link">
-              Logic Quiz
+              The Impossible Quiz
             </Link>
           </li>
         </ul>

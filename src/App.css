@@ -68,7 +68,7 @@
 }
 .brainbulb:hover,
 .brainworkout:hover {
-  transform:scale(0.93);
+  transform: scale(0.93);
   transition: 0.5s;
 }
 
@@ -82,14 +82,14 @@
   .brainbulb {
     height: 300px;
     width: 400px;
-    margin: 25px;
+    margin: 50px 25px 25px 25px;
     padding: 20px;
   }
 
   .brainworkout {
     height: 300px;
     width: 400px;
-    margin: 25px;
+    margin: 50px 25px 25px 25px;
     padding: 20px;
   }
 

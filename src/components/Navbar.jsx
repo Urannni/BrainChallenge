@@ -23,7 +23,7 @@ const Navbar = () => {
         <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
           <li>
             <Link to="/Game" className="navbar-link">
-              Rock Paper Scissors
+              Rock Paper Scissors Shoot!
             </Link>
           </li>
           <li>
