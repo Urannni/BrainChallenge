@@ -6,6 +6,8 @@ import NotFound from "./components/NotFound";
 import Quiz from "./components/Quiz";
 import MemoryCards from "./components/MemoryCards";
 import Game from "./components/Game";
+import Tictactoe from "./components/Tictactoe.jsx"
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
             <Route path="/Quiz" element={<Quiz />} />
             <Route path="/MemoryCards" element={<MemoryCards />} />
             <Route path="/Game" element={<Game />} />
+            <Route path="/Tic-tac-toe" element={<Tictactoe />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </header>

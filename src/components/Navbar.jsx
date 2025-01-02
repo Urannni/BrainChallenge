@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
-import logo from '../assets/brainlogo.png';
-import './Navbar.css';
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import logo from "../assets/brainlogo.png";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +18,12 @@ const Navbar = () => {
           </Link>
         </div>
         <button onClick={toggleMenu} className="menu-toggle-btn">
-          <FontAwesomeIcon icon={faBars} className={isOpen ? 'rotate-icon' : ''} />
+          <FontAwesomeIcon
+            icon={faBars}
+            className={isOpen ? "rotate-icon" : ""}
+          />
         </button>
-        <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
+        <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
           <li>
             <Link to="/Game" className="navbar-link">
               Rock Paper Scissors Shoot!
@@ -34,6 +37,11 @@ const Navbar = () => {
           <li>
             <Link to="/Quiz" className="navbar-link">
               The Impossible Quiz
+            </Link>
+          </li>
+          <li>
+            <Link to="/Tic-tac-toe" className="navbar-link">
+              Tic-Tac-Toe
             </Link>
           </li>
         </ul>
