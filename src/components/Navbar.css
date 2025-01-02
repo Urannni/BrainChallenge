@@ -42,8 +42,8 @@
   padding: 0;
   margin: 0;
   display: none;
-  visibility: hidden;
   position: fixed;
+  visibility: hidden;
   top: 100px;
   left: 0;
   width: 100%;
