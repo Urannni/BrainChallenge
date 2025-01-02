@@ -19,26 +19,24 @@ Welcome to **BrainChallenge**, a platform for mind-bending puzzles, tricky logic
    git clone https://github.com/yourusername/BrainChallenge.git  
 Navigate to the project folder:
 bash
-Copy code
 cd BrainChallenge  
 Install dependencies:
-bash
-Copy code
 npm install  
+
 Start the development server:
-bash
-Copy code
 npm start  
+
 🎯 How to Play
 Choose a challenge from the daily list or browse categories.
 Solve the puzzle within the time limit (if applicable).
 Earn points and climb the leaderboard!
+
 🧩 Contribute
 Got a cool idea or a killer puzzle? Contributions are welcome!
-
 Fork the repo.
 Create a new branch.
 Submit a pull request with your awesome addition.
+
 🌟 Support
 If you love BrainChallenge, give this repo a ⭐ and share it with your friends.
 
