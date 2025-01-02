@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Board from "./Board";
-import Navbar from "./Navbar"
-import Footer from "./Footer"
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import "./Tictactoe.css";
-
 
 function Tictactoe() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [isXNext, setIsXNext] = useState(true);
   const [winningCells, setWinningCells] = useState([]);
-  const [gameStatus, setGameStatus] = useState("");
-  const [bgColor, setBgColor] = useState("rgb(255, 255, 255)"); // Default background color
+  const [gameStatus, setGameStatus] = useState("Next player: X");
 
-  // Update game status and background color based on the current state
   useEffect(() => {
     const result = calculateWinner(squares);
     if (result) {
@@ -23,15 +20,7 @@ function Tictactoe() {
     } else {
       setGameStatus(`Next player: ${isXNext ? "X" : "O"}`);
     }
-
-    // Update background color based on current player's turn (X or O)
-    setBgColor(isXNext ? "rgb(255, 99, 71)" : "rgb(173, 216, 230)");
   }, [squares, isXNext]);
-
-  useEffect(() => {
-    // Apply background color to the entire body
-    document.body.style.backgroundColor = bgColor;
-  }, [bgColor]); // This hook runs when bgColor changes
 
   function handleClick(index) {
     if (squares[index] || calculateWinner(squares)) return;
@@ -72,22 +61,21 @@ function Tictactoe() {
     setSquares(Array(9).fill(null));
     setIsXNext(true);
     setWinningCells([]);
-    setGameStatus("");
-    setBgColor("rgb(255, 255, 255)"); // Reset background to white
+    setGameStatus("Next player: X");
   }
 
   return (
     <div className="div">
       <Navbar />
       <div className="game">
-        <div className="status">
-          {gameStatus || `Next player: ${isXNext ? "X" : "O"}`}
-        </div>
         <Board
           squares={squares}
           onClick={handleClick}
           winningCells={winningCells}
         />
+        <div className="status">
+          <p>{gameStatus}</p>
+        </div>
         <button className="reset-button" onClick={handleReset}>
           Reset Game
         </button>
