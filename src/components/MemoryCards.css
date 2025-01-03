@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -10,9 +10,11 @@ body {
   padding: 20px;
   color: #eee;
 }
-.h1{
+
+.h1 {
   color: #eee;
 }
+
 /* Navbar */
 .navbar {
   width: 100%;
@@ -30,7 +32,7 @@ body {
 .navbar-logo-img {
   list-style-type: none;
   height: 8vmin;
-  margin-right: 1600px;
+  margin-right: auto;
 }
 
 .navbar-links {
@@ -40,16 +42,7 @@ body {
   align-items: center;
 }
 
-.navbar-link {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-}
-
+.navbar-link,
 .nav-link {
   margin-left: 15px;
   background: none;
@@ -68,7 +61,6 @@ body {
 }
 
 /* Content */
-
 h1 {
   font-size: 2.5rem;
   color: #333;
@@ -102,8 +94,6 @@ p {
   max-width: 1000px;
   margin: 20px auto;
   justify-content: center;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr); 
 }
 
 .card {
@@ -151,36 +141,78 @@ h2 {
   font-size: 1.8rem;
   margin-top: 20px;
 }
-.div{
+
+.div {
   margin-top: -100px;
 }
 
-/* For large screens: 3 cards horizontally and 6 vertically */
+/* Responsivness */
+
+/* For small screens: Adjust layout for < 600px */
 @media (max-width: 600px) {
   .card {
-    width: 100px; 
-    height: 125px; 
+    width: 100px;
+    height: 125px;
   }
 
   .h1 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     margin-top: 300px;
   }
-  .card-grid{
+
+  .card-grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr); 
+    grid-template-rows: repeat(6, 1fr);
   }
 }
-/* For large screens: 6 cards horizontally and 3 vertically */
-@media (min-width: 601px) {
+
+/* For medium screens: 600px to 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
   .card {
-    width: 200px; 
+    width: 150px;
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+/* For large screens: 1025px to 1600px */
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .card {
+    width: 180px;
+    height: 230px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+/* For extra large screens: > 1600px */
+@media (min-width: 1601px) {
+  .card {
+    width: 200px;
     height: 250px;
   }
 
   h1 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
-
-
