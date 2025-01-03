@@ -25,6 +25,11 @@ function Footer() {
               The Impossible Quiz
             </Link>
           </li>
+          <li>
+            <Link to="/Tic-tac-toe" className="footer-link">
+              Tic-Tac-Toe
+            </Link>
+          </li>
         </ul>
         <div className="footer-icons">
           <img src={fbIcon} alt="Facebook" className="icon iconfb" />

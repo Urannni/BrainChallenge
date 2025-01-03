@@ -25,13 +25,14 @@
   color: #fff;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   margin: 40px;
+  font-size: 1.6rem;
 }
 .heroh1 {
   color: #fff;
   text-shadow: 3px 5px rgba(0, 0, 0, 0.5);
   margin: 40px;
   text-align: left;
-  font-size: 65px;
+  font-size: 55px;
 }
 .brainbulb {
   background: url(./assets/brain-light-bulb.jpg);
@@ -95,10 +96,10 @@
 
   .heroh2 {
     margin: auto;
-    font-size: 12px;
+    font-size: 1.2rem;
   }
   .heroh1 {
-    font-size: 20px;
+    font-size: 38px;
   }
 }
 

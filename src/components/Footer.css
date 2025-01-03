@@ -20,7 +20,6 @@ footer {
     margin: 20px 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
   }
   
   .footer-link {
@@ -65,7 +64,7 @@ footer {
 
   @media (max-width:768px){
     footer{
-      height: 200px;
+      height: 240px;
     }
     .footer-text{
       font-size: 0.6rem;
